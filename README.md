@@ -1,2 +1,0 @@
-# Notflix
-Notflix Hotel Application
