@@ -4,8 +4,9 @@ import { PhotographsComponent} from 'src/app/photographs/photographs.component';
 import { LoginComponent} from 'src/app/login/login.component';
 import { AppComponent } from 'src/app/app.component';
 const routes: Routes = [
-      { path: 'login', component: PhotographsComponent },
-      { path: '', component: AppComponent}
+      { path: '', component: AppComponent},
+      { path: 'login', component: LoginComponent },
+      { path: 'movies:id', component: AppComponent}
 ];
 // const routes: Routes = [];
 
