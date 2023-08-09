@@ -21,10 +21,10 @@
   }
 
   .spacer {
-    flex: 0.1;
+    flex: 0.8;
   }
   .spacer1 {
-      flex: 0.2;
+      flex: 0.1;
     }
 
   .toolbar {
@@ -38,7 +38,7 @@
     font-size: 25px;
     align-items: center;
     background-color: black;
-    color: red;
+    color: #B02A30;
     font-weight: 800;
   }
 
@@ -86,20 +86,10 @@
   }
   .link{
     margin-left: auto;
-    margin-right: 12px;
+    margin-right: 16px;
 
   }
   .title-container{
   font-size: 35px;
+  color: #B02A30;
   }
-    .background-container {
-      background-image: url('src/assets/background.jpg');
-      background-size: cover;
-      background-position: center;
-      height: calc(100vh - 40px); /* Adjust as needed to account for header */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative; /* Set the position to enable z-index */
-      z-index: -1; /* Set a lower value to keep it behind other elements */
-    }
