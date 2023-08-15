@@ -7,9 +7,12 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { BannerComponent } from './banner/banner.component';
 import { LoginComponent } from './login/login.component';
-import { FilmstripComponent } from './filmstrip/filmstrip.component';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
+import { FilmstripComponent } from 'src/app/filmstrip/filmstrip.component';
+import { HomeComponent } from 'src/app/home/home.component';
+import { HeaderComponent } from 'src/app/header/header.component';
+import { MydirectiveDirective } from './mydirective.directive';
+import { LoginDirective } from './login/login.directive';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,13 +21,16 @@ import { HeaderComponent } from './header/header.component';
     LoginComponent,
     FilmstripComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    MydirectiveDirective,
+    LoginDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
