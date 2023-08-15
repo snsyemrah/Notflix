@@ -4,25 +4,33 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
-import { TestcomponentComponent } from './testcomponent/testcomponent.component';
 import { HttpClientModule } from '@angular/common/http';
-import { PhotographsComponent } from './photographs/photographs.component';
 import { BannerComponent } from './banner/banner.component';
 import { LoginComponent } from './login/login.component';
+import { FilmstripComponent } from 'src/app/filmstrip/filmstrip.component';
+import { HomeComponent } from 'src/app/home/home.component';
+import { HeaderComponent } from 'src/app/header/header.component';
+import { MydirectiveDirective } from './mydirective.directive';
+import { LoginDirective } from './login/login.directive';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestcomponentComponent,
-    PhotographsComponent,
     BannerComponent,
-    LoginComponent
+    LoginComponent,
+    FilmstripComponent,
+    HomeComponent,
+    HeaderComponent,
+    MydirectiveDirective,
+    LoginDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

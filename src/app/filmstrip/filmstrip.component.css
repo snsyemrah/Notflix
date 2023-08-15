@@ -1,0 +1,22 @@
+.filmstrip {
+margin: 0;
+  max-width: 100%;
+  height: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: black;
+}
+
+.filmstrip-inner {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.filmstrip-item {
+  display: inline-block;
+  margin: 1 1px;
+}
+
+.poster-img {
+  max-height: 400px;
+}

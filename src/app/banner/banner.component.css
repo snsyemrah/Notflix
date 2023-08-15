@@ -1,0 +1,12 @@
+.banner {
+  margin-top:80px;
+  /* Diğer stiller */
+}
+.banner img {
+  max-width: 100%; /* Resmin genişliğini %100 yaparak yatayda genişlemesini sağlar */
+  height: auto; /* Yüksekliği otomatik olarak ayarlar, oranı bozulmaz */
+  position: absolute; /* Resmi sayfa içeriğinin üzerine konumlar */
+  top: 0; /* Üst kenara yerleştirir */
+  left: 0; /* Sol kenara yerleştirir */
+  z-index: -1; /* Resmin sayfa içeriğinin altında kalmasını sağlar */
+}

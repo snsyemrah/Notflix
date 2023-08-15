@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent {
-
+  bannerImage: string = 'path-to-your-image.jpg';
+  bannerTitle: string = 'Featured Title';
+  bannerDescription: string = 'Description of the featured content...';
 }
