@@ -1,0 +1,54 @@
+<!--<form action="/action_page.php">-->
+<!--  <input type="file" id="myFile" name="filename">-->
+
+<!--</form>-->
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<!--<form >-->
+<!--  <input id="name" type="text" name="name" placeholder="Film Name">-->
+<!-- <br>-->
+<!--  <input id="des" type="text" name="Description" placeholder="Description">-->
+<!--  <form action="/action_page.php">-->
+<!--    <input type="file" id="myFile" name="filename">-->
+
+<!--    <form action="/action_page.php">-->
+<!--      <input type="file" id="myFile" name="filename">-->
+<!--      <input type="submit">-->
+<!--    </form>-->
+
+<div class="text-center">
+  <input class="form-control" type="file"
+         (change)="onChange($event)">
+
+  <button (click)="onUpload()"
+          class="btn btn-success">
+    Upload
+  </button>
+</div>
+
+<!-- Shareable short link of  uploaded file -->
+<div class="container text-center jumbotron"
+     *ngIf="shortLink">
+  <h2> Visit Here</h2>
+  <a href="{{shortLink}}">{{shortLink}}</a>
+</div>
+
+<!--Flag variable is used here-->
+<div class="container" *ngIf="loading">
+  <h3>Loading ...</h3>
+</div>
+
+</body>
+</html>
+
+
