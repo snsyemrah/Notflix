@@ -1,4 +1,34 @@
 
 <app-banner></app-banner>
-<app-filmstrip></app-filmstrip>
+<div class="contain mt-3 mb-5 p-4">
+
+    <!-- science fiction movies  -->
+    <div class="row">
+      <h5 class="text-white">Science Fiction Movies</h5>
+      <div class="rowposter mt-3 p-2">
+        <ng-container *ngFor="let t of movies">
+          <ng-container *ngIf="t.genres.includes('Science Fiction')">
+          <img src={{t.poster_path}} class="rowimg largeposter" alt="..."
+            [routerLink]="['/movie',t.id]">
+        </ng-container>
+      </ng-container>
+      </div>
+  
+    </div>
+  
+    <!-- animation movies  -->
+    <div class="row mt-4">
+      <h5 class="text-white">Animation Movies</h5>
+      <div class="rowposter mt-3 p-2">
+        <ng-container *ngFor="let a of movies">
+          <ng-container *ngIf="a.genres.includes('Animation')">
+          <img src={{a.poster_path}} class="rowimg largeposter" alt="..."
+            [routerLink]="['/movie',a.id]">
+        </ng-container>
+      </ng-container>
+      </div>
+  
+    </div>
+</div>
+
 

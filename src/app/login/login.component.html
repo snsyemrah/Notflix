@@ -3,18 +3,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
 </head>
-
+<div class="contain-fluid">
 <div class="login-container">
   <h2>Login</h2>
-  <!-- <form (ngSubmit)="login()">
-    <div>
-      <input type="text" class="login-input" placeholder="Username" id="username" name="username" [(ngModel)]="username" required>
-    </div>
-    <div>
-      <input type="password" class="login-input" placeholder="Password" id="password" name="password" [(ngModel)]="password" required>
-    </div>
-    <button type="submit" class="login-button">Login</button>
-  </form> -->
   <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
     <div>
       <!-- <label for="username">Username:</label> -->
@@ -50,4 +41,5 @@
     <button type="submit" class="login-button" [disabled]="!loginForm.valid">Login</button>
   </form>
 
+</div>
 </div>

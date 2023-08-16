@@ -1,12 +1,53 @@
-.banner {
-  margin-top:80px;
-  /* Diğer stiller */
+.carousel-inner
+{
+    height: 700px;
 }
-.banner img {
-  max-width: 100%; /* Resmin genişliğini %100 yaparak yatayda genişlemesini sağlar */
-  height: auto; /* Yüksekliği otomatik olarak ayarlar, oranı bozulmaz */
-  position: absolute; /* Resmi sayfa içeriğinin üzerine konumlar */
-  top: 0; /* Üst kenara yerleştirir */
-  left: 0; /* Sol kenara yerleştirir */
-  z-index: -1; /* Resmin sayfa içeriğinin altında kalmasını sağlar */
+
+.carousel-inner .carousel-item img
+{
+    height: 700px;
+    object-fit: cover;
+}
+
+.carousel-caption h2
+{
+    color: #E50914;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.carousel-caption p 
+{
+    color: #ffffff;
+}
+
+.rowposter{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.rowimg
+{
+    max-height: 100px;
+    object-fit: contain;
+    width: 100%;
+    box-sizing: content-box;
+    transition: transform 450ms;
+    margin-right: 7px;
+}
+
+.rowimg:hover
+{
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+.largeposter{
+    max-height: 300px;
+}
+
+.rowposter::-webkit-scrollbar
+{
+    display: none;
 }

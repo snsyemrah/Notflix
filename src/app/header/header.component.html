@@ -1,29 +1,33 @@
 
-<div class="toolbar" role="banner">
-  <a routerLink="">
-    <img
-      width="40"
-      alt="Notflix Logo"
-      src="assets\netflix-logo.png"
-      class="logo-with-border"
-      routerLink=""
-    />
-  </a>
-  <!-- Title and Home Button -->
-  <div class="title-container">
-    <a routerLink="" style="color: #B02A30;">NOTFLIX</a>
+
+<!-- navbar start  -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">NOTFLIX</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="genreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Genres
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="genreDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Animation</a></li>
+            <li><a class="dropdown-item" href="#">Science Fiction</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="login">Login</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="spacer1"></div>
-  <a class="home-link" routerLink="" style="color: #B02A30;">Home</a>
-  <div class="spacer"></div>
-  <!-- Genre Dropdown -->
-  <div class="genre-dropdown">
-    <label for="genre">Genre:</label>
-    <select id="genre" name="genre">
-      <option value="action">Action</option>
-      <option value="sciencefiction">Science fiction</option>
-      <option value="comedy">Comedy</option>
-    </select>
-  </div>
-  <a class="link" routerLink="login" style="color: #B02A30;">Login</a>
-</div>
+</nav>
+<!-- navbar end  -->
