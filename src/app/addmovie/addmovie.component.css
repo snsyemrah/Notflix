@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This keeps the background fixed when scrolling */
+  }
+
+  .login-container {
+    margin: 120px auto;
+    width: 30%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-container h2 {
+    text-align: center;
+  }
+
+.login-input, .login-button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto; /* Adjust the margin to add spacing */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  flex-grow: 1; /* Make both elements expand equally */
+}
+
+.login-button {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+}

@@ -1,7 +1,11 @@
 <div class="filmstrip">
   <div class="filmstrip-inner">
-    <div *ngFor="let poster of posters" class="filmstrip-item">
-      <img [src]="poster" alt="Film Poster" class="poster-img">
+    <div *ngFor="let poster of movies" class="filmstrip-item">
+      <img
+        [src]="poster.poster_path"
+        alt="Film Poster"
+        class="poster-img"
+        [routerLink]="['/movies', poster.id]" />
     </div>
   </div>
 </div>

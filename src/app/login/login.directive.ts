@@ -1,10 +1,8 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[appLogin]'
+  selector: '[appLogin]',
 })
 export class LoginDirective {
-
-  constructor() { }
-
+  constructor() {}
 }

@@ -1,0 +1,66 @@
+<div class="contain-fluid">
+  <div class="login-container">
+    <h2>Add Movie</h2>
+
+    <form (ngSubmit)="addMovie()" #filmForm="ngForm">
+      <div>
+        <input
+          type="text"
+          id="movieName"
+          class="login-input"
+          placeholder="Movie Name"
+          name="movieName"
+          [(ngModel)]="movieName"
+          required />
+      </div>
+
+      <div>
+        <textarea
+          id="description"
+          class="login-input"
+          placeholder="Description"
+          name="description"
+          [(ngModel)]="description"
+          required></textarea>
+      </div>
+
+      <div>
+        <input
+          type="text"
+          id="imageUrl"
+          class="login-input"
+          placeholder="Image URL"
+          name="imageUrl"
+          [(ngModel)]="imageUrl"
+          required />
+      </div>
+
+      <div>
+        <input
+          type="text"
+          id="movieUrl"
+          class="login-input"
+          placeholder="Movie URL"
+          name="movieUrl"
+          [(ngModel)]="movieUrl"
+          required />
+      </div>
+      <div>
+        <select
+          id="genre"
+          name="genre"
+          placeholder="Genre"
+          class="login-input"
+          [(ngModel)]="genre"
+          required>
+          <option value="" disabled selected>Genre</option>
+          <option value="action">Action</option>
+          <option value="animation">Animation</option>
+          <option value="science_fiction">Science Fiction</option>
+        </select>
+      </div>
+
+      <button type="submit" class="login-button">Add Movie</button>
+    </form>
+  </div>
+</div>

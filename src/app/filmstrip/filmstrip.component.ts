@@ -1,21 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MovieService } from 'src/app/services/movie.service';
 
 @Component({
   selector: 'app-filmstrip',
   templateUrl: './filmstrip.component.html',
-  styleUrls: ['./filmstrip.component.css']
+  styleUrls: ['./filmstrip.component.css'],
 })
-export class FilmstripComponent {
-  posters: any = [
-    'assets/dune.webp',
-    'assets/lifeisbeautiful.jpg',
-    'assets/interstellar.jpg',
-    'assets/spiritedaway.jpg',
-    'assets/3idiots.jpg'
-  ];
-
-  ngOnInit() {
-    this.posters.forEach((item: any) => console.log(item));
+export class FilmstripComponent implements OnInit {
+  constructor(private service: MovieService) {}
+  movies: any;
+  ngOnInit(): void {
+    this.service.getMovies().subscribe(result => {
+      this.movies = result;
+    });
   }
-
 }

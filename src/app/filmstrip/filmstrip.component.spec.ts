@@ -8,7 +8,7 @@ describe('FilmstripComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [FilmstripComponent]
+      declarations: [FilmstripComponent],
     });
     fixture = TestBed.createComponent(FilmstripComponent);
     component = fixture.componentInstance;

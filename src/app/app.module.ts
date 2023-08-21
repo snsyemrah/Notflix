@@ -13,6 +13,9 @@ import { HeaderComponent } from 'src/app/header/header.component';
 import { MydirectiveDirective } from './mydirective.directive';
 import { LoginDirective } from './login/login.directive';
 import { FormsModule } from '@angular/forms';
+import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
+import { AddmovieComponent } from './addmovie/addmovie.component';
+import { UserService } from 'src/app/services/user.service';
 
 @NgModule({
   declarations: [
@@ -23,16 +26,18 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     HeaderComponent,
     MydirectiveDirective,
-    LoginDirective
+    LoginDirective,
+    MoviedetailsComponent,
+    AddmovieComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     CommonModule,
-    FormsModule
+    FormsModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [UserService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

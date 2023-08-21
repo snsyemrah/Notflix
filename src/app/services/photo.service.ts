@@ -10,13 +10,13 @@ import { HttpClient } from '@angular/common/http';
 // }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PhotoService {
-  constructor(private http: HttpClient) { }
-//   getData() { return this.http.get('https://jsonplaceholder.typicode.com/photos').subscribe(response);
-//    console.log(response);}
-     getPhotos(){
-       return this.http.get('https://jsonplaceholder.typicode.com/photos');
-       }
+  constructor(private http: HttpClient) {}
+  //   getData() { return this.http.get('https://jsonplaceholder.typicode.com/photos').subscribe(response);
+  //    console.log(response);}
+  getPhotos() {
+    return this.http.get('https://jsonplaceholder.typicode.com/photos');
+  }
 }
