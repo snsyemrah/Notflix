@@ -7,7 +7,7 @@
     <div class="carousel-inner">
       <div
         class="carousel-item active"
-        data-bs-interval="10000"
+        data-bs-interval="3000"
         *ngFor="let b of movies; let i = index"
         [ngClass]="{ active: i === 1 }">
         <img src="{{ b.backdrop_path }}" class="d-block w-100" alt="..." />

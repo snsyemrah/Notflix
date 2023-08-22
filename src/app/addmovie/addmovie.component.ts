@@ -7,17 +7,19 @@ import { MovieService } from 'src/app/services/movie.service';
   styleUrls: ['./addmovie.component.css'],
 })
 export class AddmovieComponent {
-  movieName = '';
-  description = '';
-  imageUrl = '';
-  genre = '';
-  movieUrl = '';
+  title = '';
+  overview = '';
+  poster_path = '';
+  genres = '';
+  url = '';
   constructor(private service: MovieService) {}
   addMovie() {
     const movie = {
-      movieName: this.movieName,
-      description: this.description,
-      imageUrl: this.imageUrl,
+      title: this.title,
+      overview: this.overview,
+      poster_path: this.poster_path,
+      genres: [this.genres],
+      url: this.url,
     };
 
     this.service.addMovie(movie).subscribe(
@@ -30,14 +32,10 @@ export class AddmovieComponent {
         console.error('Film eklenirken hata oluştu:', error);
       }
     );
+    this.title = '';
+    this.overview = '';
+    this.poster_path = '';
+    this.genres = '';
+    this.url = '';
   }
 }
-  // addMovie(): void {
-  //   const filmVerileri = {
-  //     movieName: this.movieName,
-  //     description: this.description,
-  //     imageUrl: this.imageUrl
-  //   };
-
-  //   this.service.addMovie(movie);
-  // }

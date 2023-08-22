@@ -9,10 +9,14 @@ import { MovieService } from 'src/app/services/movie.service';
 export class HomeComponent implements OnInit {
   constructor(private service: MovieService) {}
   movies: any;
+  selectedGenre: any;
+
   ngOnInit(): void {
-    
+    this.service.getSelectedGenre().subscribe(value => {
+      console.log(`getSelectedGenre: ${value}`);
+      this.selectedGenre = value;
+    });
     this.service.getMovies().subscribe(result => {
-      console.log(result);
       this.movies = result;
     });
   }

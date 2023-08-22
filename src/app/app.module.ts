@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
 import { AddmovieComponent } from './addmovie/addmovie.component';
 import { UserService } from 'src/app/services/user.service';
+import { SafePipe } from './moviedetails/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { UserService } from 'src/app/services/user.service';
     LoginDirective,
     MoviedetailsComponent,
     AddmovieComponent,
+    SafePipe,
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+<!-- <app-header></app-header> -->
 <div class="contain-fluid">
   <div class="login-container">
     <h2>Add Movie</h2>
@@ -10,7 +11,7 @@
           class="login-input"
           placeholder="Movie Name"
           name="movieName"
-          [(ngModel)]="movieName"
+          [(ngModel)]="title"
           required />
       </div>
 
@@ -20,7 +21,7 @@
           class="login-input"
           placeholder="Description"
           name="description"
-          [(ngModel)]="description"
+          [(ngModel)]="overview"
           required></textarea>
       </div>
 
@@ -31,7 +32,7 @@
           class="login-input"
           placeholder="Image URL"
           name="imageUrl"
-          [(ngModel)]="imageUrl"
+          [(ngModel)]="poster_path"
           required />
       </div>
 
@@ -42,7 +43,7 @@
           class="login-input"
           placeholder="Movie URL"
           name="movieUrl"
-          [(ngModel)]="movieUrl"
+          [(ngModel)]="url"
           required />
       </div>
       <div>
@@ -51,12 +52,12 @@
           name="genre"
           placeholder="Genre"
           class="login-input"
-          [(ngModel)]="genre"
+          [(ngModel)]="genres"
           required>
           <option value="" disabled selected>Genre</option>
-          <option value="action">Action</option>
-          <option value="animation">Animation</option>
-          <option value="science_fiction">Science Fiction</option>
+          <option value="Action">Action</option>
+          <option value="Animation">Animation</option>
+          <option value="Science Fiction">Science Fiction</option>
         </select>
       </div>
 
